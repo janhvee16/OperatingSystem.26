@@ -1,0 +1,75 @@
+//sample program that demonstrates the creation and use of classes and objects in C++:(~0827CT221026)
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Define a class called Rectangle
+class Rectangle {
+private:
+    double length;
+    double width;
+
+public:
+    // Constructor
+    Rectangle(double l, double w) {
+        length = l;
+        width = w;
+    }
+
+    // Member functions
+    double getArea() {
+        return length * width;
+    }
+
+    double getPerimeter() {
+        return 2 * (length + width);
+    }
+
+    void setLength(double l) {
+        length = l;
+    }
+
+    void setWidth(double w) {
+        width = w;
+    }
+};
+
+int main() {
+    // Create an object of the Rectangle class
+    Rectangle rect1(5.0, 3.0);
+
+    // Call member functions
+    cout << "Area of rect1: " << rect1.getArea() << endl;
+    cout << "Perimeter of rect1: " << rect1.getPerimeter() << endl;
+
+    // Change the dimensions of rect1
+    rect1.setLength(7.0);
+    rect1.setWidth(4.0);
+
+    // Call member functions again
+    cout << "Updated area of rect1: " << rect1.getArea() << endl;
+    cout << "Updated perimeter of rect1: " << rect1.getPerimeter() << endl;
+
+    // Create another object of the Rectangle class
+    Rectangle rect2(2.5, 6.0);
+
+    // Call member functions for rect2
+    cout << "Area of rect2: " << rect2.getArea() << endl;
+    cout << "Perimeter of rect2: " << rect2.getPerimeter() << endl;
+
+    return 0;
+}
+
+
+Output:
+Area of rect1: 15
+Perimeter of rect1: 16
+Updated area of rect1: 28
+Updated perimeter of rect1: 22
+Area of rect2: 15
+Perimeter of rect2: 17
+
+
+(BY-janhvee laad)
