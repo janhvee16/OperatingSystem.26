@@ -1,5 +1,17 @@
-//CPU SCHEDULING PROCESS (FCFS ,LJF,SJF,ROUNDROBIN) ~0827CY221026
+//CPU SCHEDULING PROCESS (FCFS ,LJF,SJF,ROUNDROBIN) 9~0827CY221026)
 
+CPU scheduling is the process of deciding which process or thread should be given access to the CPU resources at any given time.
+The main goals are maximizing CPU utilization, minimizing response time, and ensuring fairness between processes.
+
+Some common CPU scheduling algorithms used by operating systems include:
+
+- First-Come, First-Served (FCFS)
+- Shortest Job First (SJF)
+- Priority Scheduling
+- Round Robin (RR)
+- Multilevel Queue Scheduling
+
+The choice of algorithm depends on the specific requirements of the system, such as throughput, response time, fairness, or a combination of these factors.
 
 
 #include <algorithm>
@@ -252,3 +264,4 @@ int main() {
   return 0;
 }
 
+(~by : Janhvee Laad)
