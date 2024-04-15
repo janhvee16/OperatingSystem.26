@@ -1,4 +1,4 @@
-# SEMAPHORES(PRODUCER CONSUMER, READER WRITER, DINING PHILOSOPHER PROGRAM) ~0827CY221026
+# SEMAPHORES(PRODUCER CONSUMER, READER WRITER, DINING PHILOSOPHER PROGRAM) (~0827CY221026)
 
 
 Introduction to semaphores:
@@ -7,6 +7,15 @@ access to shared resources through wait and signal operations. Processes or thre
 for available resources by decrementing the semaphore's value and releasing resources by
 incrementing it. Semaphores help prevent race conditions and ensure mutual exclusion in
 multi-threaded environments.
+Semaphores act as gatekeepers, ensuring that no more processes or threads than the available
+resource units can access the shared resource simultaneously. This prevention of overcrowding
+mitigates race conditions and avoids potential data corruption or inconsistencies that could 
+arise from concurrent access to shared resources.
+
+Semaphores are versatile synchronization primitives that can be used for both mutual exclusion 
+(binary semaphore) and resource counting (counting semaphore), making them a fundamental
+building block in the design and implementation of concurrent operating systems and 
+multi-threaded applications.
 
 
 Types of Semaphores:
@@ -18,6 +27,7 @@ time.
 2. Counting Semaphore:
 - Can take on any non-negative integer value.
 - Used to control access to a finite number of identical resources.
+
 
 Types of Problems:
 1. Dining Philosophers Problem:
@@ -144,5 +154,4 @@ consume_item(item);
 }
 
 
-~by:Janhvee Laad
-
+(~ by:Janhvee Laad)
