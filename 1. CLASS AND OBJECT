@@ -1,5 +1,17 @@
 //sample program that demonstrates the creation and use of classes and objects in C++:(~0827CT221026)
 
+Classes:
+A class is a blueprint or template that defines the data members (variables) and member functions (methods) that describe the behavior and characteristics
+of an object.
+In operating system design, classes can be used to represent system components such as processes, threads, memory management units, file systems, and
+device drivers. For example, you could have a Process class that encapsulates process-related data (process ID, state, priority, memory usage, etc.) and
+operations (create, suspend, resume, terminate, etc.).
+
+Objects:
+An object is an instance of a class, created using the class blueprint.
+Objects represent specific instances of system components, each with its own unique state and behavior.
+In an operating system, you may have multiple objects of the Process class, each representing a different process running on the system.
+Objects can interact with each other through their member functions, simulating the interactions between different components of the operating system.
 
 #include <iostream>
 #include <string>
@@ -72,4 +84,4 @@ Area of rect2: 15
 Perimeter of rect2: 17
 
 
-(BY-janhvee laad)
+(~ by: Janhvee Laad)
